@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1 class="logo"><img src="img/logo 2 .png" alt="Book Cover"></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li>
+                        <input type="text" id="search-input" placeholder="Search books...">
+                        <button id="search-button">Search</button>
+                    </li>
+                    <li><a href="#cart">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+<!-- เมนูหมวดหมู่ -->
+<nav class="category-menu">
+    <ul>
+        <li><a href="#novel-section">Novel</a></li>
+        <li><a href="#psychology-section">Psychology</a></li>
+        <li><a href="#cartoon-section">Cartoon</a></li>
+        <li><a href="#food-section">Food</a></li>
+    </ul>
+</nav>
+
+    <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <img src="img/Yoyo.jpg" alt="Book Cover">
+        <div class="hero-text">
+            <h2>Welcome to Arn Plern store</h2>
+            <p>Your one-stop shop for all your reading needs.</p>
+        </div>
+    </div>
+</section>
+
+ <!-- Books Section -->
+<section id="books" class="books">
+        <section id="novel-section">
+            <h2>Novel</h2>
+        <div class="book-list">
+            <!-- Book Item 1 -->
+            <div class="book-item">
+                <img src="img/Narak.jpg" alt="Book Cover">
+                <h5>นิยายรักคั่นเวลา</h5>
+                <p class="price">100฿</p>
+                <button class="add-to-cart" data-title="นิยายรักคั่นเวลา" data-price="100" data-image="img/Narak.jpg">Add to Cart</button>
+            </div>                
+            <!-- Book Item 2 -->
+            <div class="book-item">
+                <img src="img/Mainarak.jpg" alt="Book Cover">
+                <h5>นิยายเรื่องนี้ฉันขอไม่เล่น</h5>
+                <p class="price">100฿</p>
+                <button class="add-to-cart" data-title="นิยายเรื่องนี้ฉันขอไม่เล่น" data-price="100" data-image="img/Mainarak.jpg">Add to Cart</button>
+            </div>
+            <!-- Book Item 3 -->
+            <div class="book-item">
+                <img src="img/navel1.jpg" alt="Book Cover">
+                <h5>ดยุคในดวงใจ </h5>
+                <p class="price">100฿</p>
+                <button class="add-to-cart" data-title="ดยุคในดวงใจ " data-price="100" data-image="img/navel1.jpg">Add to Cart</button>
+            </div>
+             <!-- Book Item 4 -->
+             <div class="book-item">
+                <img src="img/navel2.jpg" alt="Book Cover">
+                <h5>คู่มือฝึกฝนให้เป็นคนใจดี</h5>
+                <p class="price">100฿</p>
+                <button class="add-to-cart" data-title="คู่มือฝึกฝนให้เป็นคนใจดี" data-price="100" data-image="img/navel2.jpg">Add to Cart</button>
+            </div>
+             <!-- Book Item 5 -->
+             <div class="book-item">
+                <img src="img/navel3.jpg" alt="Book Cover">
+                <h5>ดวงใจเทวพรหม : ดุจอัปสร</h5>
+                <p class="price">100฿</p>
+                <button class="add-to-cart" data-title="ดวงใจเทวพรหม : ดุจอัปสร" data-price="100" data-image="img/navel3.jpg">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Books Section -->
+ <section id="books" class="books">
+    <section id="psychology-section">
+        <h2>Psychology</h2>
+        <div class="book-list">
+                      <!-- Book Item 1 -->
+                      <div class="book-item">
+                        <img src="img/Psychology1.jpg" alt="Book Cover">
+                        <h5>คู่มือฝึกฝนให้เป็นคนใจดี</h5>
+                        <p class="price">100฿</p>
+                        <button class="add-to-cart" data-title="คู่มือฝึกฝนให้เป็นคนใจดี" data-price="100" data-image="img/Psychology1.jpg">Add to Cart</button>
+                    </div>                
+                    <!-- Book Item 2 -->
+                    <div class="book-item">
+                        <img src="img/Psychology2.jpg" alt="Book Cover">
+                        <h5>เพราะฉันแตกต่าง จึงบริหารเวลาแบบนี้</h5>
+                        <p class="price">100฿</p>
+                        <button class="add-to-cart" data-title="เพราะฉันแตกต่าง จึงบริหารเวลาแบบนี้" data-price="100" data-image="img/Psychology2.jpg">Add to Cart</button>
+                    </div>
+                    <!-- Book Item 3 -->
+                    <div class="book-item">
+                        <img src="img/Psychology3.jpg" alt="Book Cover">
+                        <h5>12 กฎที่ใช้ได้ตลอดชีวิต </h5>
+                        <p class="price">100฿</p>
+                        <button class="add-to-cart" data-title="12 กฎที่ใช้ได้ตลอดชีวิต " data-price="100" data-image="img/Psychology3.jpg">Add to Cart</button>
+                    </div>
+                     <!-- Book Item 4 -->
+                     <div class="book-item">
+                        <img src="img/Psychology4.jpg" alt="Book Cover">
+                        <h5>คิดแล้ว คิดอีก</h5>
+                        <p class="price">100฿</p>
+                        <button class="add-to-cart" data-title="คิดแล้ว คิดอีก" data-price="100" data-image="img/Psychology4.jpg">Add to Cart</button>
+                    </div>
+                     <!-- Book Item 5 -->
+                     <div class="book-item">
+                        <img src="img/Psychology5.jpg" alt="Book Cover">
+                        <h5>จิตวิทยาแค่ 6 %</h5>
+                        <p class="price">100฿</p>
+                        <button class="add-to-cart" data-title="จิตวิทยาแค่ 6 %" data-price="100" data-image="img/Psychology5.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+ <!-- Books Section -->
+ <section id="books" class="books">
+    <section id="cartoon-section">
+        <h2>Cartoon</h2>
+        <div class="book-list">
+                    <!-- Book Item 1 -->
+                    <div class="book-item">
+                        <img src="img/Cartoon1.jpg" alt="Book Cover">
+                        <h5>ONE PIECE เล่ม 36</h5>
+                        <p class="price">100฿</p>
+                        <button class="add-to-cart" data-title="ONE PIECE เล่ม 36" data-price="100" data-image="img/Cartoon1.jpg">Add to Cart</button>
+                    </div>                
+                    <!-- Book Item 2 -->
+                    <div class="book-item">
+                        <img src="img/Cartoon2.jpg" alt="Book Cover">
+                        <h5>ครอบครัวตึ๋งหนืด</h5>
+                        <p class="price">100฿</p>
+                        <button class="add-to-cart" data-title="ครอบครัวตึ๋งหนืด" data-price="100" data-image="img/Cartoon2.jpg">Add to Cart</button>
+                    </div>
+                    <!-- Book Item 3 -->
+                    <div class="book-item">
+                        <img src="img/Cartoon3.jpg" alt="Book Cover">
+                        <h5>กับเธอและสายฝน เล่ม 1</h5>
+                        <p class="price">100฿</p>
+                        <button class="add-to-cart" data-title="กับเธอและสายฝน เล่ม 1" data-price="100" data-image="img/Cartoon3.jpg">Add to Cart</button>
+                    </div>
+                     <!-- Book Item 4 -->
+                     <div class="book-item">
+                        <img src="img/Cartoon4.jpg" alt="Book Cover">
+                        <h5>สายเลือดวิปริต เล่ม 15</h5>
+                        <p class="price">100฿</p>
+                        <button class="add-to-cart" data-title="สายเลือดวิปริต เล่ม" data-price="100" data-image="img/Cartoon4.jpg">Add to Cart</button>
+                    </div>
+                     <!-- Book Item 5 -->
+                     <div class="book-item">
+                        <img src="img/Cartoon5.jpg" alt="Book Cover">
+                        <h5>การ์ตูนมุนินฺ 1 2 3</h5>
+                        <p class="price">100฿</p>
+                        <button class="add-to-cart" data-title="การ์ตูนมุนินฺ 1 2 3" data-price="100" data-image="img/Cartoon5.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+ <!-- Books Section -->
+ <section id="books" class="books">
+    <section id="food-section">
+        <h2>Food</h2>
+        <div class="book-list">
+             <!-- Book Item 1 -->
+             <div class="book-item">
+                <img src="img/Food1.jpg" alt="Book Cover">
+                <h5>ขนมหวานญี่ปุ่น</h5>
+                <p class="price">100฿</p>
+                <button class="add-to-cart" data-title="ขนมหวานญี่ปุ่น" data-price="100" data-image="img/Food1.jpg">Add to Cart</button>
+            </div>                
+            <!-- Book Item 2 -->
+            <div class="book-item">
+                <img src="img/Food2.jpg" alt="Book Cover">
+                <h5>ยำ-สลัด อาเซียน</h5>
+                <p class="price">100฿</p>
+                <button class="add-to-cart" data-title="ยำ-สลัด อาเซียน" data-price="100" data-image="img/Food2.jpg">Add to Cart</button>
+            </div>
+            <!-- Book Item 3 -->
+            <div class="book-item">
+                <img src="img/Food3.jpg" alt="Book Cover">
+                <h5>อาหารไทยฟิวชั่น</h5>
+                <p class="price">100฿</p>
+                <button class="add-to-cart" data-title="อาหารไทยฟิวชั่น " data-price="100" data-image="img/Food3.jpg">Add to Cart</button>
+            </div>
+             <!-- Book Item 4 -->
+             <div class="book-item">
+                <img src="img/Food4.jpg" alt="Book Cover">
+                <h5>อร่อยทุกมื้อกับอาหารฟิวชั่น</h5>
+                <p class="price">100฿</p>
+                <button class="add-to-cart" data-title="อร่อยทุกมื้อกับอาหารฟิวชั่น" data-price="100" data-image="img/Food4.jpg">Add to Cart</button>
+            </div>
+             <!-- Book Item 5 -->
+             <div class="book-item">
+                <img src="img/Food5.jpg" alt="Book Cover">
+                <h5>เรียกน้ำย่อย Appetizers</h5>
+                <p class="price">100฿</p>
+                <button class="add-to-cart" data-title="เรียกน้ำย่อย Appetizers" data-price="100" data-image="img/Food5.jpg">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cart Section -->
+<section id="cart" class="cart">
+    <div class="container">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+        <div id="cart-total">
+            <h3>Total: 0฿</h3>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+</section>
+
+<script>
+let cart = []; // ตัวแปรเก็บรายการสินค้าในตะกร้า
+
+// ฟังก์ชันอัปเดตตะกร้าสินค้า
+function updateCart() {
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotalContainer = document.getElementById('cart-total').querySelector('h3');
+    cartItemsContainer.innerHTML = ''; // ล้างข้อมูลเก่าในตะกร้า
+
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>'; // ถ้าตะกร้าว่าง
+    } else {
+        let total = 0; // ตัวแปรสำหรับเก็บราคารวม
+        cart.forEach((item, index) => {
+            const cartItem = document.createElement('div'); // สร้าง div สำหรับสินค้าแต่ละชิ้น
+            cartItem.classList.add('cart-item');
+            
+            // สร้าง image ของหนังสือ
+            const bookImage = document.createElement('img');
+            bookImage.src = item.image;
+            bookImage.alt = item.title;
+            bookImage.classList.add('cart-item-image');
+
+            // สร้าง div สำหรับรายละเอียดสินค้า
+            const itemDetails = document.createElement('div');
+            itemDetails.innerHTML = `<strong>${item.title}</strong> - ${item.price}฿ x ${item.quantity}`;
+            
+            // ปุ่มเพิ่ม/ลดจำนวนสินค้า
+            const quantityControls = document.createElement('div');
+            const incrementButton = document.createElement('button');
+            incrementButton.textContent = '+';
+            incrementButton.addEventListener('click', () => incrementQuantity(index));
+
+            const decrementButton = document.createElement('button');
+            decrementButton.textContent = '-';
+            decrementButton.addEventListener('click', () => decrementQuantity(index));
+
+            quantityControls.appendChild(decrementButton);
+            quantityControls.appendChild(incrementButton);
+
+            // เพิ่มองค์ประกอบเข้าใน cart-item
+            cartItem.appendChild(bookImage);
+            cartItem.appendChild(itemDetails);
+            cartItem.appendChild(quantityControls);
+
+            cartItemsContainer.appendChild(cartItem);
+
+            total += parseFloat(item.price) * item.quantity; // คำนวณราคารวม
+        });
+        cartTotalContainer.textContent = `Total: ${total.toFixed(2)}฿`; // แสดงราคารวม
+    }
+}
+
+// ฟังก์ชันจัดการเมื่อคลิกปุ่ม Add to Cart
+function handleAddToCart(event) {
+    const button = event.target;
+    const title = button.getAttribute('data-title');
+    const price = button.getAttribute('data-price');
+    const image = button.getAttribute('data-image');
+    
+    // ตรวจสอบว่าสินค้าอยู่ในตะกร้าแล้วหรือไม่
+    const existingItemIndex = cart.findIndex(item => item.title === title);
+    if (existingItemIndex > -1) {
+        // ถ้าอยู่แล้ว เพิ่มจำนวนสินค้า
+        cart[existingItemIndex].quantity++;
+    } else {
+        // ถ้าไม่อยู่ในตะกร้า เพิ่มสินค้าใหม่
+        cart.push({ title, price, image, quantity: 1 });
+    }
+
+    // อัปเดตตะกร้าสินค้า
+    updateCart();
+
+    // เลื่อนไปยังส่วนตะกร้า
+    window.location.href = '#cart';
+}
+
+// ฟังก์ชันเพิ่มจำนวนสินค้า
+function incrementQuantity(index) {
+    cart[index].quantity++;
+    updateCart();
+}
+
+// ฟังก์ชันลดจำนวนสินค้า
+function decrementQuantity(index) {
+    if (cart[index].quantity > 1) {
+        cart[index].quantity--;
+    } else {
+        cart.splice(index, 1); // ลบสินค้าถ้าเหลือจำนวน 0
+    }
+    updateCart();
+}
+
+// เพิ่ม event listener ให้กับทุกปุ่ม Add to Cart
+document.addEventListener('DOMContentLoaded', () => {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', handleAddToCart);
+    });
+});
+</script>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Bookstore. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <button class="add-to-cart" data-title="นิยายรักคั่นเวลา" data-price=>Add to Cart</button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    /* ปรับขนาดรูปภาพในตะกร้า */
+    .cart-item-image {
+        width: 100px;  /* กำหนดความกว้างของภาพให้พอดี */
+        height: auto;  /* รักษาสัดส่วนของภาพ */
+        margin-right: 10px;  /* เพิ่มระยะห่างระหว่างภาพกับข้อความ */
+    }
+
+    /* ปรับขนาดปุ่มบวกลบ */
+    .cart-item button {
+        font-size: 18px;  /* ขนาดตัวอักษรของปุ่มบวก-ลบ */
+        padding: 5px 10px;  /* ระยะห่างภายในปุ่ม */
+        margin: 0 5px;  /* ระยะห่างระหว่างปุ่มบวก-ลบ */
+        cursor: pointer;  /* เปลี่ยนเคอร์เซอร์เมื่อ hover */
+    }
+
+    /* ปรับรูปแบบการแสดงผลของรายการในตะกร้า */
+    .cart-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;  /* เพิ่มระยะห่างระหว่างแต่ละรายการ */
+    }
+
+    /* ปรับรายละเอียดของสินค้า */
+    .cart-item div {
+        margin-left: 10px;
+        flex-grow: 1;
+    }
+
+    /* สไตล์ตะกร้า */
+    #cart-items {
+        padding: 20px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* สไตล์ปุ่ม checkout */
+    #checkout-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #1A4870;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    /* เมื่อ hover ที่ปุ่ม checkout */
+    #checkout-btn:hover {
+        background-color: #5B99C2;
+    }
+</style>
+
+<script>
+let Cart = []; // ตัวแปรเก็บรายการสินค้าในตะกร้า
+
+// ฟังก์ชันอัปเดตตะกร้าสินค้า
+function updateCart() {
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotalContainer = document.getElementById('cart-total').querySelector('h3');
+    cartItemsContainer.innerHTML = ''; // ล้างข้อมูลเก่าในตะกร้า
+
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>'; // ถ้าตะกร้าว่าง
+    } else {
+        let total = 0; // ตัวแปรสำหรับเก็บราคารวม
+        cart.forEach((item, index) => {
+            const cartItem = document.createElement('div'); // สร้าง div สำหรับสินค้าแต่ละชิ้น
+            cartItem.classList.add('cart-item');
+            
+            // สร้าง image ของหนังสือ
+            const bookImage = document.createElement('img');
+            bookImage.src = item.image;
+            bookImage.alt = item.title;
+            bookImage.classList.add('cart-item-image');
+
+            // สร้าง div สำหรับรายละเอียดสินค้า
+            const itemDetails = document.createElement('div');
+            itemDetails.innerHTML = `<strong>${item.title}</strong> - ${item.price}฿ x ${item.quantity}`;
+            
+            // ปุ่มเพิ่ม/ลดจำนวนสินค้า
+            const quantityControls = document.createElement('div');
+            const incrementButton = document.createElement('button');
+            incrementButton.textContent = '+';
+            incrementButton.addEventListener('click', () => incrementQuantity(index));
+
+            const decrementButton = document.createElement('button');
+            decrementButton.textContent = '-';
+            decrementButton.addEventListener('click', () => decrementQuantity(index));
+
+            quantityControls.appendChild(decrementButton);
+            quantityControls.appendChild(incrementButton);
+
+            // เพิ่มองค์ประกอบเข้าใน cart-item
+            cartItem.appendChild(bookImage);
+            cartItem.appendChild(itemDetails);
+            cartItem.appendChild(quantityControls);
+
+            cartItemsContainer.appendChild(cartItem);
+
+            total += parseFloat(item.price) * item.quantity; // คำนวณราคารวม
+        });
+        cartTotalContainer.textContent = `Total: ${total.toFixed(2)}฿`; // แสดงราคารวม
+    }
+}
+
+// ฟังก์ชันจัดการเมื่อคลิกปุ่ม Add to Cart
+function handleAddToCart(event) {
+    const button = event.target;
+    const title = button.getAttribute('data-title');
+    const price = button.getAttribute('data-price');
+    const image = button.getAttribute('data-image');
+    
+    // ตรวจสอบว่าสินค้าอยู่ในตะกร้าแล้วหรือไม่
+    const existingItemIndex = cart.findIndex(item => item.title === title);
+    if (existingItemIndex > -1) {
+        // ถ้าอยู่แล้ว เพิ่มจำนวนสินค้า
+        cart[existingItemIndex].quantity++;
+    } else {
+        // ถ้าไม่อยู่ในตะกร้า เพิ่มสินค้าใหม่
+        cart.push({ title, price, image, quantity: 1 });
+    }
+
+    // อัปเดตตะกร้าสินค้า
+    updateCart();
+
+    // เลื่อนไปยังส่วนตะกร้า
+    window.location.href = '#cart';
+}
+
+// ฟังก์ชันเพิ่มจำนวนสินค้า
+function incrementQuantity(index) {
+    cart[index].quantity++;
+    updateCart();
+}
+
+// ฟังก์ชันลดจำนวนสินค้า
+function decrementQuantity(index) {
+    if (cart[index].quantity > 0) {
+        cart[index].quantity--;
+    } else {
+        cart.splice(index, 1); // ลบสินค้าถ้าเหลือจำนวน 0
+    }
+    updateCart();
+}
+
+// เพิ่ม event listener ให้กับทุกปุ่ม Add to Cart
+document.addEventListener('DOMContentLoaded', () => {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', handleAddToCart);
+    });
+});
+</script>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Display Data in Object</h1>
+    </div>
+    <div class="topnav">
+      <a href="/">Home</a>
+      <a href="/about">About US</a>
+      <a href="/contactus">Contact US</a>
+      <a href="/product">Product</a>
+      <a href="/addproduct">Product</a>
+  </div>
+    <div class="row">
+      <div class="column">
+        <% Items.forEach(function(item) { %> ID: <%= item.id %> Name: <%=
+        item.name %><br />
+        <img src="<%= item.image %>" alt="<%= item.name %>" width="400" />
+        <hr />
+        <% }); %>
+      </div>
+    </div>
+  </body>
+</html>

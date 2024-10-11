@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Insert Product Form</h1>
+    </div>
+    <div class="topnav">
+      <a href="/">Home</a>
+      <a href="/about">About US</a>
+      <a href="/contactus">Contact US</a>
+      <a href="/product">Product</a>
+      <a href="/addproduct">Product</a>
+  </div>
+    <div class="row">
+      <div class="column">
+        <form action="/resultsproduct" method="post">
+            <input
+                type="text"
+                name="name"
+                placeholder="Enter name"
+                required
+            /><br>
+            <input
+                type="number"
+                name="price"
+                placeholder="Enter price"
+                required
+            /><br>
+            <textarea
+                name="description"
+                placeholder="Enter description"
+                required
+            ></textarea><br>
+            <input
+                type="file"
+                name="image"
+                accept="image/*"
+                required
+            /><br>
+            <button type="submit">Submit</button>
+          </form>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>
