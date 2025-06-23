@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Siam Blend</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="main-header">
+        <nav id="main-nav">
+            <div class="nav-logo">
+                <a href="index.html">Siam Blend</a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="garden.html">The Garden Experience</a></li>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="visit.html">Visit Us</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="reservations.html">Reservations & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-bg" style="background-image: url('images/gallery-hero-placeholder.jpg');"></div>
+            <div class="hero-content">
+                <h1>Gallery</h1>
+                <p>Visual Stories from Siam Blend</p>
+            </div>
+        </section>
+
+        <section id="gallery-intro" class="page-section">
+            <div class="container content-section">
+                <h2>Explore Our Moments</h2>
+                <p>Step into the visual world of Siam Blend. Our gallery showcases the beauty of our garden, the elegance of our minimalist interiors, the artistry of our culinary creations, and the vibrant atmosphere of our events. We hope these images inspire you to visit and create your own memories with us.</p>
+            </div>
+        </section>
+
+        <section id="gallery-grid-main" class="page-section alt-bg">
+            <div class="container">
+                <!-- Filter buttons could go here if desired in future -->
+                <!-- <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="garden">Garden</button>
+                    <button class="filter-btn" data-filter="interior">Interior</button>
+                    <button class="filter-btn" data-filter="food">Food & Drinks</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                </div> -->
+
+                <div class="gallery-grid">
+                    <!-- Morning Garden Views -->
+                    <a href="images/gallery-garden-morning1-large.jpg" class="gallery-item" data-category="garden">
+                        <img src="images/gallery-garden-morning1-thumb.jpg" alt="Morning light in the garden" loading="lazy">
+                        <div class="gallery-item-overlay"><span>Morning Garden</span></div>
+                    </a>
+                    <a href="images/gallery-interior-minimal1-large.jpg" class="gallery-item" data-category="interior">
+                        <img src="images/gallery-interior-minimal1-thumb.jpg" alt="Minimalist interior corner" loading="lazy">
+                        <div class="gallery-item-overlay"><span>Interior Minimalism</span></div>
+                    </a>
+                    <a href="images/gallery-food-drink1-large.jpg" class="gallery-item" data-category="food">
+                        <img src="images/gallery-food-drink1-thumb.jpg" alt="Artisan coffee presentation" loading="lazy">
+                        <div class="gallery-item-overlay"><span>Coffee Art</span></div>
+                    </a>
+                    <a href="images/gallery-garden-evening1-large.jpg" class="gallery-item" data-category="garden">
+                        <img src="images/gallery-garden-evening1-thumb.jpg" alt="Garden lights at dusk" loading="lazy">
+                        <div class="gallery-item-overlay"><span>Evening Garden</span></div>
+                    </a>
+                    <a href="images/gallery-event-decor1-large.jpg" class="gallery-item" data-category="events">
+                        <img src="images/gallery-event-decor1-thumb.jpg" alt="Seasonal event decoration" loading="lazy">
+                        <div class="gallery-item-overlay"><span>Event Decor</span></div>
+                    </a>
+                    <a href="images/gallery-interior-corner-large.jpg" class="gallery-item" data-category="interior">
+                        <img src="images/gallery-interior-corner-thumb.jpg" alt="Cozy Japanese inspired corner" loading="lazy">
+                        <div class="gallery-item-overlay"><span>Cozy Corner</span></div>
+                    </a>
+                    <a href="images/gallery-garden-plants-large.jpg" class="gallery-item" data-category="garden">
+                        <img src="images/gallery-garden-plants-thumb.jpg" alt="Close up of tropical plants" loading="lazy">
+                        <div class="gallery-item-overlay"><span>Tropical Flora</span></div>
+                    </a>
+                     <a href="images/gallery-food-dessert2-large.jpg" class="gallery-item" data-category="food">
+                        <img src="images/gallery-food-dessert2-thumb.jpg" alt="Beautifully plated dessert" loading="lazy">
+                        <div class="gallery-item-overlay"><span>Artisan Dessert</span></div>
+                    </a>
+                    <!-- Add more items as needed, following the structure:
+                        - Morning Garden Views
+                        - Evening Skyline & Garden Lights
+                        - Interior Minimalism
+                        - Seasonal Highlights & Event Decor
+                    -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal Structure -->
+        <div id="lightbox-modal" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-image">
+            <div id="lightbox-caption"></div>
+            <a class="lightbox-prev">&#10094;</a>
+            <a class="lightbox-next">&#10095;</a>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Siam Blend. Where Thai Soul Meets Global Flavor.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
