@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations & Contact - Siam Blend</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="main-header">
+        <nav id="main-nav">
+            <div class="nav-logo">
+                <a href="index.html">Siam Blend</a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="garden.html">The Garden Experience</a></li>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="visit.html">Visit Us</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="reservations.html">Reservations & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-bg" style="background-image: url('images/reservations-hero-placeholder.jpg');"></div>
+            <div class="hero-content">
+                <h1>Reservations & Contact</h1>
+                <p>Connect With Us or Book Your Table</p>
+            </div>
+        </section>
+
+        <section id="contact-info-social" class="page-section">
+            <div class="container">
+                <div class="contact-columns">
+                    <div class="contact-details">
+                        <h2>Get In Touch</h2>
+                        <p>We'd love to hear from you. Reach out with any questions or for more information.</p>
+                        <ul>
+                            <li><strong>Phone:</strong> <a href="tel:+6621234567">+66 (0)2 123 4567</a></li>
+                            <li><strong>Email:</strong> <a href="mailto:hello@siamblend.com">hello@siamblend.com</a></li>
+                            <li><strong>LINE ID:</strong> <a href="https://line.me/ti/p/~@siamblend" target="_blank" rel="noopener noreferrer">@siamblend</a></li>
+                            <li><strong>Address:</strong> Siam Blend, [123 Serene Lane, Sukhumvit, Bangkok, Thailand 10110]</li>
+                        </ul>
+                    </div>
+                    <div class="social-media-links">
+                        <h2>Follow Us</h2>
+                        <p>Stay updated with our latest news, events, and visual stories.</p>
+                        <ul>
+                            <li><a href="https://instagram.com/siamblend" target="_blank" rel="noopener noreferrer" class="social-link"><i class="icon-instagram"></i> Instagram</a></li>
+                            <li><a href="https://facebook.com/siamblend" target="_blank" rel="noopener noreferrer" class="social-link"><i class="icon-facebook"></i> Facebook</a></li>
+                            <li><a href="https://line.me/ti/p/~@siamblend" target="_blank" rel="noopener noreferrer" class="social-link"><i class="icon-line"></i> LINE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq-section" class="page-section alt-bg">
+            <div class="container content-section">
+                <h2>Frequently Asked Questions (FAQ)</h2>
+                <div class="faq-item">
+                    <button class="faq-question">Is Siam Blend pet-friendly?</button>
+                    <div class="faq-answer">
+                        <p>Yes, we welcome well-behaved pets in our outdoor garden areas. Please ensure your pet is leashed and supervised at all times. Water bowls are available upon request.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is parking available?</button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer valet parking and have a limited number of self-parking spots. Please see our <a href="visit.html#directions" class="text-link">Visit Us</a> page for more details on parking fees and capacity.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I make a reservation for a large group?</button>
+                    <div class="faq-answer">
+                        <p>Absolutely! For groups of [e.g., 8 or more] people, we recommend making a reservation in advance to ensure we can accommodate you comfortably. Please use our online booking form or call us directly.</p>
+                    </div>
+                </div>
+                 <div class="faq-item">
+                    <button class="faq-question">Do you cater to dietary restrictions?</button>
+                    <div class="faq-answer">
+                        <p>We strive to accommodate various dietary needs. Many of our menu items can be adapted for vegetarian, vegan, or gluten-free preferences. Please inform your server of any allergies or restrictions when ordering.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="online-booking" class="page-section">
+            <div class="container content-section">
+                <h2>Online Booking System</h2>
+                <p>Book your table, private room, or inquire about full venue hire using our form below. For immediate assistance or special requests, please call us.</p>
+                <form id="reservation-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="booking-type">Type of Booking:</label>
+                        <select id="booking-type" name="booking-type" required>
+                            <option value="table">Table Reservation</option>
+                            <option value="private-room">Private Room</option>
+                            <option value="venue-hire">Full Venue Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests:</label>
+                        <input type="number" id="guests" name="guests" min="1" value="2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Special Requests / Message (Optional):</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                </form>
+                <div id="booking-confirmation" style="display:none; margin-top:1.5em; padding: 1em; background-color: var(--color-bg-alt); border-left: 4px solid var(--color-accent);">
+                    <p>Thank you for your request! We will be in touch shortly to confirm your booking.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking-policies" class="page-section alt-bg">
+            <div class="container content-section">
+                <h2>Booking Policies</h2>
+                <ul>
+                    <li>Reservations are held for 15 minutes. Please call us if you are running late.</li>
+                    <li>For groups larger than [e.g., 10 people], a deposit may be required.</li>
+                    <li>Cancellations should be made at least [e.g., 24 hours] in advance for large groups or special bookings.</li>
+                    <li>Specific table requests are noted but cannot always be guaranteed.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Siam Blend. Where Thai Soul Meets Global Flavor.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

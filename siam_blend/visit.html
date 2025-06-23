@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Us - Siam Blend</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Leaflet CSS for map - will be added if map is implemented -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/> -->
+</head>
+<body>
+    <header id="main-header">
+        <nav id="main-nav">
+            <div class="nav-logo">
+                <a href="index.html">Siam Blend</a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="garden.html">The Garden Experience</a></li>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="visit.html">Visit Us</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="reservations.html">Reservations & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-bg" style="background-image: url('images/visit-hero-placeholder.jpg');"></div>
+            <div class="hero-content">
+                <h1>Visit Us</h1>
+                <p>Find Your Way to Our Oasis</p>
+            </div>
+        </section>
+
+        <section id="map-location" class="page-section">
+            <div class="container">
+                <h2>Our Location</h2>
+                <p class="section-subtitle">Siam Blend, [123 Serene Lane, Sukhumvit, Bangkok, Thailand 10110]</p>
+                <div id="map-embed-placeholder" style="width: 100%; height: 450px; background-color: #e0e0e0; display:flex; align-items:center; justify-content:center; border-radius: 8px; box-shadow: var(--color-shadow-medium);">
+                    <p style="color: var(--color-text-secondary); font-size: 1.2rem;">Interactive Map Will Be Embedded Here</p>
+                    <!-- Example of an iframe embed, if allowed: -->
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.800000000000!2d100.56100000000000!3d13.73000000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQzJzQ4LjAiTiAxMDDCsDMzJzM5LjYiRQ!5e0!3m2!1sen!2sth!4v1670000000000!5m2!1sen!2sth" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="directions" class="page-section alt-bg">
+            <div class="container content-section">
+                <h2>Getting Here</h2>
+                <div class="directions-methods">
+                    <div class="direction-method">
+                        <h3><i class="icon-bts"></i> By BTS Skytrain</h3>
+                        <p>Take the Sukhumvit Line to <strong>[Nearest BTS Station, e.g., Phrom Phong]</strong> station. From there, it's a short [e.g., 10-minute walk / 5-minute taxi or motorbike ride]. Follow signs for [Landmark] or use our map for detailed walking directions.</p>
+                    </div>
+                    <div class="direction-method">
+                        <h3><i class="icon-mrt"></i> By MRT Subway</h3>
+                        <p>Take the Blue Line to <strong>[Nearest MRT Station, e.g., Sukhumvit]</strong> station. Interchange with the BTS Skytrain to [BTS Station] or take a taxi directly from the MRT station (approx. [e.g., 15 minutes]).</p>
+                    </div>
+                    <div class="direction-method">
+                        <h3><i class="icon-taxi"></i> By Taxi</h3>
+                        <p>Tell your driver to go to "Siam Blend" on [Serene Lane, Sukhumvit]. Most drivers are familiar with the area. You can also show them our address in Thai: [สยาม เบลนด์, 123 ซอยสุขุมวิท, กรุงเทพฯ 10110].</p>
+                    </div>
+                    <div class="direction-method">
+                        <h3><i class="icon-car"></i> By Car</h3>
+                        <p>Parking is available at Siam Blend. We offer valet parking services during peak hours. Our parking capacity is [Number] vehicles. Please note that there might be parking fees: [Fee structure, e.g., First hour free, ฿50/hour thereafter. Free for X hours with validation.].</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="opening-hours" class="page-section">
+            <div class="container content-section">
+                <h2>Opening Hours & Holiday Schedule</h2>
+                <div class="hours-info">
+                    <div class="hours-block">
+                        <h3>Regular Hours</h3>
+                        <ul>
+                            <li><strong>Monday - Friday:</strong> 8:00 AM - 9:00 PM</li>
+                            <li><strong>Saturday - Sunday:</strong> 9:00 AM - 10:00 PM</li>
+                        </ul>
+                    </div>
+                    <div class="hours-block">
+                        <h3>Holiday Schedule</h3>
+                        <p>We are open on most public holidays. Any special hours or closures will be announced on our <a href="journal.html#announcements" class="text-link">Journal</a> and social media channels.</p>
+                        <p><strong>Upcoming Special Hours:</strong></p>
+                        <ul>
+                            <li>[Songkran Festival]: [e.g., Open 10 AM - 6 PM]</li>
+                            <li>[New Year's Day]: [e.g., Closed]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Siam Blend. Where Thai Soul Meets Global Flavor.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <!-- Leaflet JS for map - will be added if map is implemented -->
+    <!-- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script> -->
+    <!-- <script>
+        // Basic Leaflet Map Placeholder
+        // var map = L.map('map-embed-placeholder').setView([13.7300, 100.5610], 15); // Example Coords for Bangkok
+        // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        //     maxZoom: 19,
+        //     attribution: '© OpenStreetMap'
+        // }).addTo(map);
+        // L.marker([13.7300, 100.5610]).addTo(map)
+        //     .bindPopup('Siam Blend <br> [123 Serene Lane, Sukhumvit]')
+        //     .openPopup();
+    </script> -->
+</body>
+</html>
